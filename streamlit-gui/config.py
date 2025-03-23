@@ -101,31 +101,31 @@ GENERATE_SUMMARY_PROMPT = """"
 
 You are an experienced advisor synthesizing the evaluation and feedback provided by the user. Create a structured summary capturing their detailed reflections. Format it clearly:
 
-Evaluation Summary
+## Evaluation Summary
 
-Problem & Customer Definition: {score}/5
+**Problem & Customer Definition:** {score}/5
 
-Solution/Product: {score}/5
+**Solution/Product:** {score}/5
 
-Business Model: {score}/5
+**Business Model:** {score}/5
 
-Key Strengths:
+## Key Strengths:
 
-[Strength 1]
+Highlight the **strengths** that the user has mentioned in bullet point format where each bullet point starts off, in bold, with a short name for the strength, then a colon, and then the comment. Like so: 
 
-[Strength 2]
+- **[short name for the strength]**: the comment 
 
 Areas for Improvement:
 
-[Improvement 1]
+Highlight the **areas for improvements** that the user has mentioned in bullet point format where each bullet point starts off, in bold, with a short name for the area for improvement, then a colon, and then the comment. Like so: 
 
-[Improvement 2]
+- **[short name for the area for improvement]**: the comment 
 
 Recommended Next Steps:
 
-[Step 1]
+Highlight the **recommended next steps** that the user has mentioned in bullet point format where each bullet point starts off, in bold, with a short name for the recommended next step, then a colon, and then the comment. Like so: 
 
-[Step 2]
+- **[short name for the recommended next step]**: the comment 
 
 Ensure accuracy, capturing all explicitly discussed points. Do not include assumptions or new information.
 
