@@ -197,7 +197,7 @@ class StreamlitGUI:
                     st.markdown(self.interview_instructions)
 
 
-    @st.dialog("AI Interview Guide", width='large')
+    @st.dialog("VentureLens Guide", width='large')
     def display_instructions(self) -> None: 
         """Displays instructions in a pop up dialog"""
         st.markdown(self.interview_instructions)
@@ -208,7 +208,7 @@ class StreamlitGUI:
         if st.session_state.interview_status: 
             # Add 'Quit' button to the side bar 
             with st.sidebar: 
-                st.markdown("To end the interview, click quit below")
+                st.markdown("To end the VentureLens, click quit below")
                 # add the button and runs self.on_quit_button when hit 
                 st.button(
                     label="Quit", 
@@ -223,7 +223,7 @@ class StreamlitGUI:
         if st.session_state.quit_button_hit and not st.session_state.interview_status and not st.session_state.show_login_form: 
             # Only show the restart button if the quit button has been hit, interview is no longer active, and we are not showing the login page
             with st.sidebar: 
-                st.markdown("To restart the interview from scratch, click restart below")
+                st.markdown("To restart the VentureLens from scratch, click restart below")
                 # add the button and runs self.on_restart_button when hit 
                 st.button(
                     label="Restart", 
@@ -238,7 +238,7 @@ class StreamlitGUI:
         if not st.session_state.show_login_form and not st.session_state.reached_error: 
             # button is always displayed unless we are in the login page to allow people to generate the document at any time 
             with st.sidebar: 
-                st.markdown("To generate a summary document of the interview, click generate below") 
+                st.markdown("To generate a summary document of the VentureLens, click generate below") 
                 # add the button and runs self.on_generate_summary_button when hit 
                 st.button(
                     label="Generate", 
@@ -362,7 +362,7 @@ class StreamlitGUI:
         st.session_state.interview_status = False 
 
         # save a message to the session that the interview is over 
-        self.save_msg_to_session('assistant', "You have cancelled the interview.")
+        self.save_msg_to_session('assistant', "You have cancelled the VentureLens.")
 
         # save transcript to dropbox 
         thread = threading.Thread(target=self.save_transcript_to_dropbox, args=(st.session_state.to_dict(),)) 
@@ -405,7 +405,7 @@ class StreamlitGUI:
 
             try: 
                 # add the title to the top 
-                summary = f"# Interview Summary\n\nGenerated on {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')} by {st.session_state.name}\n\n" + summary 
+                summary = f"# VentureLens Summary\n\nGenerated on {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')} by {st.session_state.name}\n\n" + summary 
 
                 # convert the markdown into word doc 
                 with tempfile.NamedTemporaryFile(suffix=".docx", delete=True) as tmp_file: 
@@ -437,7 +437,7 @@ class StreamlitGUI:
         message.markdown("To download the summary document, click download below")
         st.download_button(
             label='Download document', 
-            help='Download interview summary document', 
+            help='Download VentureLens summary document', 
             data=doc_bytes,
             file_name=f"{st.session_state.username}_interview_summary.docx", 
             mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document", 
