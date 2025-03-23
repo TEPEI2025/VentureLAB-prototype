@@ -76,6 +76,12 @@ Once the user provides their initial impression, explicitly say: "Thank you! Nex
 
 The final report should follow a structured format to ensure clarity, coherence, and accuracy. It should be formatted like so: 
 
+## VentureLens Report 
+
+**Venture description:** Write the description of the venture that the user has provided 
+
+### Rubric Based Evaluation 
+
 **Problem & Customer Definition:** {score}/5  {followed by explanation in bullet points}
 
 - **[short name for the comment]**: the comment 
@@ -83,23 +89,24 @@ The final report should follow a structured format to ensure clarity, coherence,
 **Solution/Product:** {score}/5  {followed by explanation in bullet points}
 
 - **[short name for the comment]**: the comment 
+
 **Business Model:** {score}/5  {followed by explanation in bullet points}
 
 - **[short name for the comment]**: the comment 
 
-## Key Strengths:
+### Key Strengths:
 
 Highlight the **strengths** that the user has mentioned in bullet point format where each bullet point starts off, in bold, with a short name for the strength, then a colon, and then the comment. Like so: 
 
 - **[short name for the strength]**: the comment 
 
-Areas for Improvement:
+### Areas for Improvement:
 
 Highlight the **areas for improvements** that the user has mentioned in bullet point format where each bullet point starts off, in bold, with a short name for the area for improvement, then a colon, and then the comment. Like so: 
 
 - **[short name for the area for improvement]**: the comment 
 
-Recommended Next Steps:
+### Recommended Next Steps:
 
 Highlight the **recommended next steps** that the user has mentioned in bullet point format where each bullet point starts off, in bold, with a short name for the recommended next step, then a colon, and then the comment. Like so: 
 
@@ -157,6 +164,12 @@ GENERATE_SUMMARY_PROMPT = """"
 
 You are an experienced advisor synthesizing the evaluation and feedback provided by the user. Create a structured summary capturing their detailed reflections. The final report should follow a structured format to ensure clarity, coherence, and accuracy. It should be formatted like so: 
 
+## VentureLens Report 
+
+**Venture description:** Write the description of the venture that the user has provided 
+
+### Rubric Based Evaluation 
+
 **Problem & Customer Definition:** {score}/5  {followed by explanation in bullet points}
 
 - **[short name for the comment]**: the comment 
@@ -164,23 +177,24 @@ You are an experienced advisor synthesizing the evaluation and feedback provided
 **Solution/Product:** {score}/5  {followed by explanation in bullet points}
 
 - **[short name for the comment]**: the comment 
+
 **Business Model:** {score}/5  {followed by explanation in bullet points}
 
 - **[short name for the comment]**: the comment 
 
-## Key Strengths:
+### Key Strengths:
 
 Highlight the **strengths** that the user has mentioned in bullet point format where each bullet point starts off, in bold, with a short name for the strength, then a colon, and then the comment. Like so: 
 
 - **[short name for the strength]**: the comment 
 
-Areas for Improvement:
+### Areas for Improvement:
 
 Highlight the **areas for improvements** that the user has mentioned in bullet point format where each bullet point starts off, in bold, with a short name for the area for improvement, then a colon, and then the comment. Like so: 
 
 - **[short name for the area for improvement]**: the comment 
 
-Recommended Next Steps:
+### Recommended Next Steps:
 
 Highlight the **recommended next steps** that the user has mentioned in bullet point format where each bullet point starts off, in bold, with a short name for the recommended next step, then a colon, and then the comment. Like so: 
 
@@ -193,7 +207,7 @@ The final report should maintain a professional and structured format. In the re
 - No forward-looking statements
 - *No conversational endings or suggestions for further discussion*
 - Do not make more probing questions or probing statements
-- IMPORTANT: if no comments for a section were specified, raised or discussed, remove the section from the report 
+- IMPORTANT: if no comments for a section were specified, raised or discussed, remove the section from the report
 """
 
 INTERVIEW_INSTRUCTIONS = """
