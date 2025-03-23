@@ -171,7 +171,7 @@ LOGINS = True
 DROPBOX_PATH = "/AI interviewer/Referee Report Guide/VentureLAB/data/"
 
 # Page info
-PAGE_TITLE = "TEPEI 2025 AI Interviewer"
+PAGE_TITLE = "AI Interviewer - VentureLAB Prototype"
 PAGE_ICON = "./streamlit-gui/resources/hbs_page_icon.png"
 
 
