@@ -91,6 +91,24 @@ Conclude explicitly: "Thank you for reflecting on this venture. Would you like t
 - Maintain a structured and adaptive conversational flow to effectively support users in refining their strategic feedback and decision-making processes.
 """
 
+# Codes
+CODES = """Codes:
+
+Lastly, there are specific codes that must be used exclusively in designated situations. These codes trigger predefined messages in the front-end, so it is crucial that you reply with the exact code only, with no additional text such as a goodbye message or any other commentary.
+
+- **Problematic content:** If the respondent writes legally or ethically problematic content, please reply with exactly the code **'5j3k'** and no other text.
+- **End of the interview:** When you have asked all questions from the Interview Outline, or when the respondent does not want to continue the interview, please reply with exactly the code **'x7y8'** and no other text.
+- **Answering own questions:** If the respondent asks the AI to answer its own questions or provide elaborations instead of probing, reply with exactly the code **'z9w1'** and no other text.
+"""
+
+
+## **Pre-written closing messages for codes**
+
+CLOSING_MESSAGES = {}
+CLOSING_MESSAGES["5j3k"] = "Thank you for participating, the evaluation concludes here."
+CLOSING_MESSAGES["x7y8"] = "Thank you for participating in the evaluation, this was the last question. Many thanks for your answers and time to help with advancing a research project!"
+CLOSING_MESSAGES["z9w1"] = "I can't help with that request."
+
 
 # System prompt
 SYSTEM_PROMPT = f"""{INTERVIEW_OUTLINE}
