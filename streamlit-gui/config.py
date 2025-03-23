@@ -135,21 +135,17 @@ Ensure accuracy, capturing all explicitly discussed points. Do not include assum
 INTERVIEW_INSTRUCTIONS = """
 This AI tool is designed to assist your evaluation:
 
-Provide your initial thoughts clearly and specifically.
+- Provide your initial thoughts clearly and specifically.
+- Discuss one topic at a time; indicate readiness to move on.
+- Provide concrete examples to clarify your points.
+- After finishing, click "Generate" to create your structured summary.
 
-Discuss one topic at a time; indicate readiness to move on.
+**Additional Features**:
 
-Provide concrete examples to clarify your points.
-
-After finishing, click "Generate" to create your structured summary.
-
-Additional:
-
-Click "Quit" to end the session.
-
-Click "Restart" for a new evaluation.
-
-Avoid closing the window before generating your summary to retain your progress.
+- Click "Quit" to end the session.
+- Click "Restart" for a new evaluation.
+- Avoid closing the window before generating your summary to retain your progress.
+- Please note: Streamlit keeps a log of all your conversations once sessions start. 
 """
 
 
