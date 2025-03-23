@@ -182,7 +182,7 @@ LOGINS = True
 
 
 # Directories
-DROPBOX_PATH = "/AI interviewer/Referee Report Guide/VentureLAB/data/"
+DROPBOX_PATH = "/AI interviewer/VentureLAB/data/"
 
 # Page info
 PAGE_TITLE = "AI Interviewer - VentureLAB Prototype"
