@@ -197,7 +197,7 @@ class StreamlitGUI:
                     st.markdown(self.interview_instructions)
 
 
-    @st.dialog("AI Referee Report Guide", width='large')
+    @st.dialog("AI Interview Guide", width='large')
     def display_instructions(self) -> None: 
         """Displays instructions in a pop up dialog"""
         st.markdown(self.interview_instructions)
