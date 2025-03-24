@@ -151,7 +151,7 @@ Lastly, there are specific codes that must be used exclusively in designated sit
 
 CLOSING_MESSAGES = {}
 CLOSING_MESSAGES["5j3k"] = "Thank you for participating, the evaluation concludes here."
-CLOSING_MESSAGES["x7y8"] = "Thank you for participating in the evaluation, this was the last question. Many thanks for your answers and time to help with advancing a research project!"
+CLOSING_MESSAGES["x7y8"] = "Many thanks for your answers and time. Your evaluation has been recorded."
 CLOSING_MESSAGES["z9w1"] = "I can't help with that request."
 
 
