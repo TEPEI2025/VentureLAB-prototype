@@ -211,7 +211,12 @@ The final report should maintain a professional and structured format. In the re
 """
 
 INTERVIEW_INSTRUCTIONS = """
-This AI tool is designed to assist your evaluation:
+
+This interviewer agent is designed to assist you in your evaluation by facilitating a conversation between you and the agent about the venture. 
+The interviewer agent will ask you questions about your initial judgments, but it is not designed to give you its own opinions about the venture. 
+Instead, it will help you craft a constructive and insightful assessment of the venture, synthesizing and summarizing your assessment into a summarized report. 
+
+Here are some guidelines for using the bot: 
 
 - Provide your initial thoughts clearly and specifically.
 - Discuss one topic at a time; indicate readiness to move on.
